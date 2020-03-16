@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Fonts
+@import "fonts";
+
+// Header
+@import "components/header";
+
+/*
+  Main page styles
+*/
+
+.container{
+  max-width: 1290px;
+}
+// Video Slider
+@import "main/videoSlide";
+
+// History
+@import "main/history";
