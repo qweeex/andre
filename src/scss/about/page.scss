@@ -1,0 +1,13 @@
+.page{
+  margin-bottom: 65px;
+  margin-top: 20px;
+  &-title{
+    font-weight: 300;
+    font-size: 51px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A6124;
+    font-family: $muller;
+  }
+}

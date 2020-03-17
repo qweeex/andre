@@ -1,0 +1,49 @@
+.footer{
+  background: #EFE7DC;
+  margin-top: 192px;
+  &-item{
+    text-align: center;
+    margin-top: 27px;
+    &__text{
+      margin-top: 11px;
+    }
+    p{
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      font-family: $muller;
+      color: #301411;
+      margin-bottom: 14px;
+      a{
+        color: inherit;
+      }
+    }
+  }
+  &-logo{
+    text-align: center;
+    margin-top: -69px;
+  }
+  &-line{
+    border: 0.5px solid #343333;
+    width: 100%;
+  }
+  &-policy{
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: $muller;
+    color: #301411;
+    padding-top: 21px;
+    text-align: center;
+    a{
+      color: inherit;
+    }
+  }
+  &-social{
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+}

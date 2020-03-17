@@ -1,10 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
+// Swiper
+@import "~swiper/swiper";
 // Fonts
 @import "fonts";
 
 // Header
 @import "components/header";
+
+// Footer
+@import "components/footer";
 
 /*
   Main page styles
@@ -18,3 +23,24 @@
 
 // History
 @import "main/history";
+
+// Cook
+@import "main/cook";
+
+// Pizza
+@import "main/pizza";
+
+// Booking
+@import "main/booking";
+
+// Instagram
+@import "main/instagram";
+
+
+/*
+  About page
+*/
+
+@import "about/page";
+
+@import "about/about";

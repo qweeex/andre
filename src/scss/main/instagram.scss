@@ -1,0 +1,45 @@
+.instagram{
+  margin-top: 113px;
+  &-title{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 120%;
+    font-family: $muller;
+    text-transform: uppercase;
+    color: #4A6124;
+  }
+  &-arrows{
+    display: flex;
+    align-items: center;
+    &__left{
+      margin-right: 20px;
+      cursor: pointer;
+      &:hover{
+        svg{
+          path{
+            transition: all 0.4s;
+            stroke: #4a6124;
+          }
+        }
+      }
+    }
+    &__right{
+      margin-left: 20px;
+      cursor: pointer;
+      &:hover{
+        svg{
+          path{
+            transition: all 0.4s;
+            stroke: #4a6124;
+          }
+        }
+      }
+    }
+  }
+  .insta-slider{
+    margin-top: 53px;
+    .swiper-slide{
+      width: 397px;
+    }
+  }
+}

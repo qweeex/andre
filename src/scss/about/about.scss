@@ -1,0 +1,131 @@
+.about.about-revers{
+  margin-top: 126px;
+  &:before{
+    display: none;
+  }
+}
+.about{
+  position: relative;
+  &:before{
+    height: 465px;
+    left: 0;
+    top: 88px;
+    position: absolute;
+    display: block;
+    content: '';
+    width: 95%;
+    background: #F3ECE4;
+  }
+  &-slider{
+    position: relative;
+    margin-right: 88px;
+  }
+  &-arrows{
+    position: absolute;
+    bottom: 50px;
+    z-index: 1500;
+    right: 50px;
+    display: flex;
+    svg{
+      path{
+        stroke: #ffffff;
+      }
+    }
+    &__left{
+      cursor: pointer;
+      &:hover{
+        svg{
+          path{
+            transition: all 0.4s;
+            stroke: #4A6124;
+          }
+        }
+      }
+    }
+    &__right{
+      margin-left: 14px;
+      cursor: pointer;
+      &:hover{
+        svg{
+          path{
+            transition: all 0.4s;
+            stroke: #4A6124;
+          }
+        }
+      }
+    }
+  }
+  &-photos{
+    position: relative;
+    overflow: hidden;
+    &:before{
+      z-index: 15;
+      border: 1px solid #ffffff;
+      display: block;
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+  &-content{
+    &__title{
+      font-weight: 300;
+      font-size: 32px;
+      font-family: $muller;
+      text-transform: uppercase;
+      color: #4A6124;
+    }
+    &__desc{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 120%;
+      color: #301411;
+      font-family: $circle;
+      font-variant: small-caps;
+      margin-top: 50px;
+      padding-right: 15%;
+    }
+    &__btn{
+      max-width: 200px;
+      width: 100%;
+      background: #4A6124;
+      border: 0;
+      border-radius: 25px;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 13px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      margin-top: 45px;
+    }
+    &__btn-outline{
+      max-width: 200px;
+      width: 100%;
+      margin-left: 17px;
+      background: transparent;
+      border: 1px solid #4A6124;
+      border-radius: 25px;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 13px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #4A6124;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      margin-top: 45px;
+      transition: all 0.4s;
+      &:hover{
+        background: #4A6124;
+        color: #ffffff;
+      }
+    }
+  }
+}

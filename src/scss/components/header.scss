@@ -4,6 +4,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 15;
 }
 .header-main .header{
   &-logo{
@@ -28,6 +29,8 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   &-nav{
     text-align: center;

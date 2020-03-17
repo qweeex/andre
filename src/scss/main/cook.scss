@@ -1,19 +1,8 @@
-.history{
+.cook{
   position: relative;
   margin-top: 185px;
-  &:before{
-    height: 652px;
-    left: 0px;
-    top: 0;
-    position: absolute;
-    display: block;
-    content: '';
-    width: 95%;
-    background: #F3ECE4;
-  }
   &-img{
     padding-right: 87px;
-    margin-top: -90px;
     &__pic{
       position: relative;
       overflow: hidden;
