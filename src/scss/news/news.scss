@@ -1,0 +1,72 @@
+.news{
+  &-item{
+    height: 100%;
+    padding-bottom: 107px;
+    &:nth-last-child(1){
+      padding-bottom: 0;
+    }
+  }
+  &-revers{
+    .news-borderBottom{
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    .news-content__date{
+      right: auto;
+      left: 100px;
+    }
+  }
+  &-borderBottom{
+    border-bottom: 3px solid #301411;
+    border-image: url('../../img/dotted.png') 30 round round;
+  }
+  &-img{
+    img{
+      max-width: 100%;
+    }
+  }
+  &-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    &__title{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 120%;
+      font-family: $muller;
+      text-transform: uppercase;
+      color: #4A6124;
+      margin-bottom: 0;
+    }
+    &__desc{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 120%;
+      color: #301411;
+      font-family: $circle;
+      margin-bottom: 0;
+      padding-top: 43px;
+      text-align: left;
+      font-variant: small-caps;
+    }
+    &__date{
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $circle;
+      text-align: center;
+      color: #301411;
+      position: absolute;
+      right: 100px;
+      bottom: 10px;
+      margin-bottom: 0
+    }
+  }
+}

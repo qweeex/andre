@@ -13,8 +13,11 @@ jQuery(function() {
      // Instagram
      InitInstagram();
 
-     // Saratov SLider
-     SaratovSlider()
+     // Menu category
+      MenuCategory();
+
+      // Menu item
+      MenuItem();
 
   });
 
@@ -37,24 +40,38 @@ jQuery(function() {
 
   }
 
-  function SaratovSlider() {
-      let saratov = new Swiper('.about-photos__carousel', {
-          slidesPerView: 1,
-          fadeEffect: {
-              crossFade: true
-          },
+  function MenuCategory() {
+
+      let categoryMenu = new Swiper('.menu-category__slider' ,{
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          spaceBetween: 58,
+          slideToClickedSlide: true
       });
 
-      $('.about-arrows__left').on('click', function (e) {
-          e.preventDefault();
-        saratov.slidePrev();
-        console.log('Saratov prev');
+      $('.menu-category__arrows > .arrows-left').on('click', function () {
+          categoryMenu.slidePrev();
       });
 
-      $('.about-arrows__right').on('click', function (e) {
-          e.preventDefault();
-          saratov.slideNext();
-          console.log('Saratov next');
+      $('.menu-category__arrows > .arrows-right').on('click', function () {
+          categoryMenu.slideNext();
+      });
+
+  }
+
+  function MenuItem() {
+
+      let menuItem = new Swiper('.vertical-content', {
+          direction: 'vertical',
+          slidesPerView: 10,
+          autoHeight: false,
+      });
+
+      $(document).on('click', '.menu-info__arrows > .arrow-top', function () {
+          menuItem.slidePrev();
+      });
+      $(document).on('click', '.menu-info__arrows > .arrow-bottom', function () {
+          menuItem.slideNext();
       });
 
   }

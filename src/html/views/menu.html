@@ -1,0 +1,138 @@
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-auto ml-auto mr-auto">
+                <h1 class="page-title">Меню</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="menu-category">
+                    <div class="menu-category__arrows">
+                        <div class="arrows-left">
+                            <img src="../../img/arrow-left.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-category__wrapper">
+                        <div class="menu-category__slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">холодные закуски</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">салаты</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">горячие закуски</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">супы</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">ризотто и равиоли</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">паста</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="menu-category__link">блюда из рыбы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category__arrows">
+                        <div class="arrows-right">
+                            <img src="../../img/arrow-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row menu-info">
+            <div class="col-xl-5">
+                <div class="menu-info__img">
+                    <img src="../../img/menu.png" alt="">
+                    <div class="img-title">
+                        <p>Маргарита</p>
+                    </div>
+                </div>
+                <div class="menu-info__desc">
+                    <p>Томатный соус, сыр Моцарелла, помидор, базилик </p>
+                </div>
+            </div>
+            <div class="col-xl-1">
+                <div class="menu-info__arrows">
+                    <div class="arrow-top"><img src="../../img/arrow-top.svg" alt=""></div>
+                    <div class="arrow-bottom"><img src="../../img/arrow-bottom.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="menu-content">
+                    <div class="menu-content__title">
+                        <p>пицца</p>
+                        <span></span>
+                        <p>pizza</p>
+                    </div>
+                    <div class="menu-content__wrapper">
+                        <div class="vertical-content swiper-container" style="    height: 534px;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <form action="" class="menu-content__item">
+                                        <div class="item-title">
+                                            <p>Маргарита</p>
+                                        </div>
+                                        <div class="item-info">
+                                            <p class="info-weight">450 г</p>
+                                            <p class="info-price">380 ₽</p>
+                                            <button class="info-cart">
+                                                <img src="../../img/cart-mini.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="swiper-slide">
+                                    <form action="" class="menu-content__item">
+                                        <div class="item-title">
+                                            <p>италия</p>
+                                        </div>
+                                        <div class="item-info">
+                                            <p class="info-weight">450 г</p>
+                                            <p class="info-price">380 ₽</p>
+                                            <button class="info-cart">
+                                                <img src="../../img/cart-mini.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="swiper-slide">
+                                    <form action="" class="menu-content__item" data-img="">
+                                        <div class="item-title">
+                                            <p>барбекю</p>
+                                        </div>
+                                        <div class="item-info">
+                                            <p class="info-weight">450 г</p>
+                                            <p class="info-price">380 ₽</p>
+                                            <button class="info-cart">
+                                                <img src="../../img/cart-mini.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
