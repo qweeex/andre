@@ -1,10 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<%= _.template(require('./../includes/header.html').default)(data) %>
 
-</body>
-</html>
+<div class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-auto ml-auto mr-auto">
+                <h1 class="page-title">Контакты</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-5">
+                <div class="contact-img">
+                    <img src="../../img/contact.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <div class="contact-info">
+                    <div class="contact-info__city">
+                        <p class="city-name">Саратов</p>
+                        <p class="city-address">Адрес: ул. Рахова, 186 (угол ул. Посадского)</p>
+                        <p class="city-phone"><a href="tel:8452292303">(8452) 292-303</a>, <a href="tel:>514350">514-350</a></p>
+                        <p class="city-email"><a href="mailto:uandrerestoran@mail.ru">uandrerestoran@mail.ru</a></p>
+                        <p class="city-time">Время работы: 12:00-24:00</p>
+                    </div>
+                    <div class="contact-info__line"></div>
+                    <div class="contact-info__city">
+                        <p class="city-name">энгельс</p>
+                        <p class="city-address">Адрес: ул. Калинина, д.3 (рядом с ТЦ "Лазурный")</p>
+                        <p class="city-phone"><a href="tel:(8453) 526-526">(8453) 526-526</a></p>
+                        <p class="city-time">Время работы: 12:00-23:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="contact-form">
+                    <div class="contact-form__title">
+                        <p>нам важно ваше мнение</p>
+                    </div>
+                    <div class="contact-form__inputs">
+                        <input type="text" name="name" placeholder="Имя" class="form-input">
+                        <input type="text" name="email" placeholder="E-mail" class="form-input">
+                    </div>
+                    <div class="contact-form__message">
+                        <textarea name="message" placeholder="Здесь Вы можете оставить отзыв, жалобу или написать свои предложения"></textarea>
+                    </div>
+                    <div class="contact-form__submit">
+                        <div class="submit-policy">
+                            <input type="checkbox" class="d-none" name="policy" value="1" id="bookPolice">
+                            <label for="bookPolice">
+                                <span>
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14.5" cy="14.5" r="14" stroke="white"/>
+    <g clip-path="url(#clip0)">
+    <path d="M21.7945 10.0644C21.5211 9.79103 21.078 9.79103 20.8045 10.0644L12.4181 18.4509L9.1945 15.2273C8.92115 14.9539 8.47796 14.954 8.20455 15.2273C7.93117 15.5007 7.93117 15.9439 8.20455 16.2172L11.9231 19.9358C12.1964 20.2091 12.6399 20.2089 12.9131 19.9358L21.7945 11.0544C22.0679 10.781 22.0679 10.3378 21.7945 10.0644Z"
+          fill="white"/>
+    </g>
+    <defs>
+    <clipPath id="clip0">
+    <rect x="8" y="8" width="14" height="14" fill="white"/>
+    </clipPath>
+    </defs></svg>
+                                </span>
+                                <p>Я согласен с условиями <a href="#">политики конфиденциальности</a></p>
+                            </label>
+                        </div>
+                        <div class="submit-btn">
+                            <button>Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="contact-map" id="contactMap"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

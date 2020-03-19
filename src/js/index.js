@@ -19,9 +19,12 @@ jQuery(function() {
       // Menu item
       MenuItem();
 
+      // Contact map
+      ymaps.ready(contactMap);
+
   });
 
-  function InitInstagram() {
+    function InitInstagram() {
     let offsetLeft = $('.container')[0].offsetLeft;
     offsetLeft = offsetLeft + 15;
     let insta = new Swiper('.insta-slider', {
@@ -40,7 +43,7 @@ jQuery(function() {
 
   }
 
-  function MenuCategory() {
+    function MenuCategory() {
 
       let categoryMenu = new Swiper('.menu-category__slider' ,{
           slidesPerView: 'auto',
@@ -59,7 +62,7 @@ jQuery(function() {
 
   }
 
-  function MenuItem() {
+    function MenuItem() {
 
       let menuItem = new Swiper('.vertical-content', {
           direction: 'vertical',
@@ -75,5 +78,17 @@ jQuery(function() {
       });
 
   }
+
+
+    function contactMap () {
+        let myMap = new ymaps.Map('contactMap', {
+            center: [51.528934, 46.062145],
+            zoom: 12,
+            controls: ['zoomControl'],
+        });
+        myMap.geoObjects
+            .add(new ymaps.Placemark([51.543142, 46.021680]))
+            .add(new ymaps.Placemark([51.503741, 46.117476]));
+    }
 
 });
