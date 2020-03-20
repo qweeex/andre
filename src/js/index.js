@@ -22,6 +22,22 @@ jQuery(function() {
       // Contact map
       ymaps.ready(contactMap);
 
+      // Order
+      $(document).on('change', 'input[name="delivery"]', function (e) {
+
+          switch (parseInt(e.target.value)) {
+              case 1:
+                  $('.order-card__inputs.delivery-0').addClass('d-none');
+                  $('.order-card__inputs.delivery-1').removeClass('d-none');
+                  break;
+              case 0:
+                  $('.order-card__inputs.delivery-1').addClass('d-none');
+                  $('.order-card__inputs.delivery-0').removeClass('d-none');
+                  break;
+          }
+
+      });
+
   });
 
     function InitInstagram() {

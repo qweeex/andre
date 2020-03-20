@@ -101,58 +101,127 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-auto ml-auto mr-auto">
-            <h1 class="page-title">О нас</h1>
+            <h1 class="page-title">оформление заказа</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="about">
+    <div class="order">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6">
-            <div class="about-slider">
-              <div class="about-photos">
-                <img src="../../img/about.png" alt="" class="about-photos__pic" />
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="order-card">
+              <div class="order-card__types">
+                <input type="radio" id="delivery-0" name="delivery" class="d-none" value="0" checked />
+                <label for="delivery-0">
+                  доставка
+                </label>
+                <input type="radio" id="delivery-1" name="delivery" class="d-none" value="1" />
+                <label for="delivery-1">
+                  самовывоз
+                </label>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="about-content">
-              <h3 class="about-content__title">Саратов</h3>
-              <p class="about-content__desc">
-                Адрес: ул. Рахова, 186 (угол ул. Посадского)
-                <br />
-                (8452) 292-303, 514-350
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-revers about">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6">
-            <div class="about-content">
-              <h3 class="about-content__title">энгельс</h3>
-              <p class="about-content__desc">
-                Адрес: ул. Калинина, 3 ( рядом с ТЦ “Лазурный” )
-                <br />
-                (8453) 526-526
-              </p>
-              <div class="about-content__buttons">
-                <a href="#">
-                  <button class="about-content__btn-outline">заказать банкет</button>
-                </a>
+              <div class="order-card__inputs delivery-0">
+                <div class="input-city">
+                  <select name="city">
+                    <option value="Город">Город</option>
+                    <option value="Саратов">Саратов</option>
+                    <option value="Энгельс">Энгельс</option>
+                  </select>
+                </div>
+                <div class="input-address input-contact">
+                  <input name="name" class="input-street" placeholder="Имя" type="text" />
+                  <input name="phone" class="input-dom" placeholder="Телефон" type="text" />
+                </div>
+                <div class="input-address">
+                  <input name="street" class="input-street" placeholder="Улица" type="text" />
+                  <input name="dom" class="input-dom" placeholder="Дом" type="text" />
+                </div>
+                <div class="input-address__more">
+                  <input type="text" name="flat" class="input-flat" placeholder="Квартира" />
+                  <input type="text" name="parad" class="input-parad" placeholder="Подъезд" />
+                  <input type="text" name="domofon" class="input-domofon" placeholder="Код двери" />
+                  <input type="text" name="level" class="input-level" placeholder="Этаж" />
+                </div>
+                <div class="input-comment">
+                  <textarea name="comment" placeholder="Комментарий" class="input-textarea"></textarea>
+                </div>
+                <div class="input-pay">
+                  <div class="input-change">
+                    <input type="text" name="change" class="change-val" placeholder="Нужна сдача с" />
+                  </div>
+                  <div class="input-typePay">
+                    <select name="pay" id="">
+                      <option value="Способ оплаты">Способ оплаты</option>
+                      <option value="Наличными">Наличными</option>
+                      <option value="Картой">Картой</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="about-slider">
-              <div class="about-photos">
-                <img src="../../img/about.png" alt="" class="about-photos__pic" />
+              <div class="order-card__inputs delivery-1 d-none">
+                <div class="input-city">
+                  <select name="restoran">
+                    <option value="Выберите ресторан">Выберите ресторан</option>
+                    <option value="Саратов">Саратов</option>
+                    <option value="Энгельс">Энгельс</option>
+                  </select>
+                </div>
+                <div class="input-address input-contact">
+                  <input name="name" class="input-street" placeholder="Имя" type="text" />
+                  <input name="phone" class="input-dom" placeholder="Телефон" type="text" />
+                </div>
+                <div class="input-comment">
+                  <textarea name="comment" placeholder="Комментарий" class="input-textarea"></textarea>
+                </div>
+                <div class="input-pay">
+                  <div class="input-change">
+                    <input type="text" name="change" class="change-val" placeholder="Нужна сдача с" />
+                  </div>
+                  <div class="input-typePay">
+                    <select name="pay" id="">
+                      <option value="Способ оплаты">Способ оплаты</option>
+                      <option value="Наличными">Наличными</option>
+                      <option value="Картой">Картой</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="order-card__total">
+                <div class="total-title">
+                  <p>сумма заказа</p>
+                </div>
+                <div class="total-price">
+                  <p>2 500 ₽</p>
+                </div>
+              </div>
+              <div class="order-card__submit">
+                <div class="submit-policy">
+                  <input type="checkbox" class="d-none" name="policy" value="1" id="bookPolice" />
+                  <label for="bookPolice">
+                    <span>
+                      <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14.5" cy="14.5" r="14" stroke="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M21.7945 10.0644C21.5211 9.79103 21.078 9.79103 20.8045 10.0644L12.4181 18.4509L9.1945 15.2273C8.92115 14.9539 8.47796 14.954 8.20455 15.2273C7.93117 15.5007 7.93117 15.9439 8.20455 16.2172L11.9231 19.9358C12.1964 20.2091 12.6399 20.2089 12.9131 19.9358L21.7945 11.0544C22.0679 10.781 22.0679 10.3378 21.7945 10.0644Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect x="8" y="8" width="14" height="14" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                    <p>Я согласен с условиями <a href="#">политики конфиденциальности</a></p>
+                  </label>
+                </div>
+                <div class="submit-btn">
+                  <button>Оформить заказ</button>
+                </div>
               </div>
             </div>
           </div>

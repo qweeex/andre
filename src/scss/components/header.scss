@@ -86,3 +86,28 @@
     }
   }
 }
+
+@media (max-width: 1600px) {
+  .header{
+    &-container{
+      max-width: 1400px;
+    }
+    &-nav{
+      margin-left: -10%;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .header{
+    &-container{
+      max-width: 1190px;
+    }
+    &-link{
+      padding-left: 0;
+      padding-right: 0.5em;
+    }
+    &-callback{
+      padding-left: 0;
+    }
+  }
+}

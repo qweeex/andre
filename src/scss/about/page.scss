@@ -11,3 +11,11 @@
     font-family: $muller;
   }
 }
+@media (max-width: 1400px) {
+  .page{
+    margin-bottom: 40px;
+    &-title{
+      font-size: 40px;
+    }
+  }
+}

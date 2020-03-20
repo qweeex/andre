@@ -287,3 +287,16 @@
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .menu{
+    &-info{
+      margin-top: 60px;
+    }
+    &-content{
+      &__wrapper{
+        margin-top: 40px;
+      }
+    }
+  }
+}

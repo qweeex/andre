@@ -87,7 +87,6 @@
       max-width: 200px;
       width: 100%;
       background: #4A6124;
-      border: 0;
       border-radius: 25px;
       font-weight: normal;
       font-size: 13px;
@@ -98,6 +97,12 @@
       padding-top: 18px;
       padding-bottom: 18px;
       margin-top: 45px;
+      transition: all 0.4s;
+      border: 1px solid #4A6124;
+      &:hover{
+        color: #301411;
+        background: #fff;
+      }
     }
   }
 }

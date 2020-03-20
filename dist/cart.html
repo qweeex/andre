@@ -101,58 +101,205 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-auto ml-auto mr-auto">
-            <h1 class="page-title">О нас</h1>
+            <h1 class="page-title">Корзина</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="about">
+    <div class="cart">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6">
-            <div class="about-slider">
-              <div class="about-photos">
-                <img src="../../img/about.png" alt="" class="about-photos__pic" />
+        <div class="cart-list">
+          <div class="row cart-item align-items-center">
+            <div class="col-xl-auto">
+              <div class="cart-item__img">
+                <img src="../../img/cart-item.png" alt="" />
+                <form action="" class="cart-item__remove">
+                  <button>
+                    <svg width="36" height="36" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="18" fill="#4A6124" />
+                      <g clip-path="url(#clip0)">
+                        <path
+                          d="M17.4279 17.9595L12.1164 23.271C11.9688 23.4185 11.9688 23.6576 12.1164 23.8052C12.1901 23.879 12.2868 23.9158 12.3834 23.9158C12.4801 23.9158 12.5767 23.879 12.6504 23.8052L18.0018 18.4537L23.3532 23.8052C23.4271 23.879 23.5237 23.9158 23.6202 23.9158C23.7168 23.9158 23.8136 23.879 23.8872 23.8052C24.0348 23.6576 24.0348 23.4185 23.8872 23.271L18.5759 17.9595L23.8908 12.6442C24.0384 12.4967 24.0384 12.2576 23.8908 12.11C23.7432 11.9627 23.5042 11.9627 23.3568 12.11L18.002 17.4652L12.6466 12.1102C12.4991 11.9629 12.2602 11.9629 12.1126 12.1102C11.9651 12.2578 11.9651 12.4969 12.1126 12.6444L17.4279 17.9595Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0">
+                          <rect x="12" y="12" width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <div class="cart-item__name">
+                <p>Морской салат</p>
+              </div>
+              <div class="cart-item__weight">
+                <p>280 гр.</p>
+              </div>
+            </div>
+            <div class="col-xl-auto ml-auto">
+              <div class="cart-item__info">
+                <div class="info-counter">
+                  <button class="info-counter__btn info-counter__minus">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="17.5" stroke="#4A6124" />
+                      <path d="M14.273 17.813V18.839H20.942V17.813H14.273Z" fill="#301411" />
+                    </svg>
+                  </button>
+                  <span>1</span>
+                  <button class="info-counter__btn info-counter__plus">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="18" fill="#4A6124" />
+                      <path
+                        d="M18.586 17.837V14.189H17.56V17.837H13.912V18.863H17.56V22.511H18.586V18.863H22.215V17.837H18.586Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="info-price">
+                  <p>638 ₽</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
-            <div class="about-content">
-              <h3 class="about-content__title">Саратов</h3>
-              <p class="about-content__desc">
-                Адрес: ул. Рахова, 186 (угол ул. Посадского)
-                <br />
-                (8452) 292-303, 514-350
-              </p>
+          <div class="row cart-item align-items-center">
+            <div class="col-xl-auto">
+              <div class="cart-item__img">
+                <img src="../../img/cart-item.png" alt="" />
+                <form action="" class="cart-item__remove">
+                  <button>
+                    <svg width="36" height="36" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="18" fill="#4A6124" />
+                      <g clip-path="url(#clip0)">
+                        <path
+                          d="M17.4279 17.9595L12.1164 23.271C11.9688 23.4185 11.9688 23.6576 12.1164 23.8052C12.1901 23.879 12.2868 23.9158 12.3834 23.9158C12.4801 23.9158 12.5767 23.879 12.6504 23.8052L18.0018 18.4537L23.3532 23.8052C23.4271 23.879 23.5237 23.9158 23.6202 23.9158C23.7168 23.9158 23.8136 23.879 23.8872 23.8052C24.0348 23.6576 24.0348 23.4185 23.8872 23.271L18.5759 17.9595L23.8908 12.6442C24.0384 12.4967 24.0384 12.2576 23.8908 12.11C23.7432 11.9627 23.5042 11.9627 23.3568 12.11L18.002 17.4652L12.6466 12.1102C12.4991 11.9629 12.2602 11.9629 12.1126 12.1102C11.9651 12.2578 11.9651 12.4969 12.1126 12.6444L17.4279 17.9595Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0">
+                          <rect x="12" y="12" width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <div class="cart-item__name">
+                <p>Морской салат</p>
+              </div>
+              <div class="cart-item__weight">
+                <p>280 гр.</p>
+              </div>
+            </div>
+            <div class="col-xl-auto ml-auto">
+              <div class="cart-item__info">
+                <div class="info-counter">
+                  <button class="info-counter__btn info-counter__minus">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="17.5" stroke="#4A6124" />
+                      <path d="M14.273 17.813V18.839H20.942V17.813H14.273Z" fill="#301411" />
+                    </svg>
+                  </button>
+                  <span>10</span>
+                  <button class="info-counter__btn info-counter__plus">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="18" fill="#4A6124" />
+                      <path
+                        d="M18.586 17.837V14.189H17.56V17.837H13.912V18.863H17.56V22.511H18.586V18.863H22.215V17.837H18.586Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="info-price">
+                  <p>1 638 ₽</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-revers about">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6">
-            <div class="about-content">
-              <h3 class="about-content__title">энгельс</h3>
-              <p class="about-content__desc">
-                Адрес: ул. Калинина, 3 ( рядом с ТЦ “Лазурный” )
-                <br />
-                (8453) 526-526
-              </p>
-              <div class="about-content__buttons">
-                <a href="#">
-                  <button class="about-content__btn-outline">заказать банкет</button>
+          <div class="row cart-item align-items-center">
+            <div class="col-xl-auto">
+              <div class="cart-item__img">
+                <img src="../../img/cart-item.png" alt="" />
+                <form action="" class="cart-item__remove">
+                  <button>
+                    <svg width="36" height="36" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="18" fill="#4A6124" />
+                      <g clip-path="url(#clip0)">
+                        <path
+                          d="M17.4279 17.9595L12.1164 23.271C11.9688 23.4185 11.9688 23.6576 12.1164 23.8052C12.1901 23.879 12.2868 23.9158 12.3834 23.9158C12.4801 23.9158 12.5767 23.879 12.6504 23.8052L18.0018 18.4537L23.3532 23.8052C23.4271 23.879 23.5237 23.9158 23.6202 23.9158C23.7168 23.9158 23.8136 23.879 23.8872 23.8052C24.0348 23.6576 24.0348 23.4185 23.8872 23.271L18.5759 17.9595L23.8908 12.6442C24.0384 12.4967 24.0384 12.2576 23.8908 12.11C23.7432 11.9627 23.5042 11.9627 23.3568 12.11L18.002 17.4652L12.6466 12.1102C12.4991 11.9629 12.2602 11.9629 12.1126 12.1102C11.9651 12.2578 11.9651 12.4969 12.1126 12.6444L17.4279 17.9595Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0">
+                          <rect x="12" y="12" width="12" height="12" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <div class="cart-item__name">
+                <p>Морской салат</p>
+              </div>
+              <div class="cart-item__weight">
+                <p>280 гр.</p>
+              </div>
+            </div>
+            <div class="col-xl-auto ml-auto">
+              <div class="cart-item__info">
+                <div class="info-counter">
+                  <button class="info-counter__btn info-counter__minus">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="17.5" stroke="#4A6124" />
+                      <path d="M14.273 17.813V18.839H20.942V17.813H14.273Z" fill="#301411" />
+                    </svg>
+                  </button>
+                  <span>1</span>
+                  <button class="info-counter__btn info-counter__plus">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="18" fill="#4A6124" />
+                      <path
+                        d="M18.586 17.837V14.189H17.56V17.837H13.912V18.863H17.56V22.511H18.586V18.863H22.215V17.837H18.586Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="info-price">
+                  <p>38 ₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row cart-total align-items-center">
+            <div class="col-xl-auto">
+              <div class="cart-total__name">
+                <p>сумма заказа</p>
+              </div>
+            </div>
+            <div class="col-xl-auto">
+              <div class="cart-total__price">
+                <p>2 500 ₽</p>
+              </div>
+            </div>
+            <div class="col-xl-auto ml-auto">
+              <div class="cart-total__btn">
+                <a href="/order.html">
+                  <button>Оформить заказ</button>
                 </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="about-slider">
-              <div class="about-photos">
-                <img src="../../img/about.png" alt="" class="about-photos__pic" />
               </div>
             </div>
           </div>
